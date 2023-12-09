@@ -1,20 +1,24 @@
 {
   "files": {
     "main.css": "/rentcars/static/css/main.2d709f4f.css",
-    "main.js": "/rentcars/static/js/main.843d028d.js",
-    "static/js/415.4cf0dab7.chunk.js": "/rentcars/static/js/415.4cf0dab7.chunk.js",
-    "static/js/572.872688c8.chunk.js": "/rentcars/static/js/572.872688c8.chunk.js",
-    "static/js/395.704b3e3e.chunk.js": "/rentcars/static/js/395.704b3e3e.chunk.js",
+    "main.js": "/rentcars/static/js/main.0015d382.js",
+    "static/js/415.eca48f1c.chunk.js": "/rentcars/static/js/415.eca48f1c.chunk.js",
+    "static/css/378.9756849d.chunk.css": "/rentcars/static/css/378.9756849d.chunk.css",
+    "static/js/378.425a27a7.chunk.js": "/rentcars/static/js/378.425a27a7.chunk.js",
+    "static/js/395.fb6d965e.chunk.js": "/rentcars/static/js/395.fb6d965e.chunk.js",
     "static/media/logo.png": "/rentcars/static/media/logo.7136c13249cfad27f42a.png",
     "index.html": "/rentcars/index.html",
+    "static/media/heart.svg": "/rentcars/static/media/heart.8eedddeb891b567f886909f0659c5af4.svg",
+    "static/media/active .svg": "/rentcars/static/media/active .291718f2c413af1e972677389b94c245.svg",
     "main.2d709f4f.css.map": "/rentcars/static/css/main.2d709f4f.css.map",
-    "main.843d028d.js.map": "/rentcars/static/js/main.843d028d.js.map",
-    "415.4cf0dab7.chunk.js.map": "/rentcars/static/js/415.4cf0dab7.chunk.js.map",
-    "572.872688c8.chunk.js.map": "/rentcars/static/js/572.872688c8.chunk.js.map",
-    "395.704b3e3e.chunk.js.map": "/rentcars/static/js/395.704b3e3e.chunk.js.map"
+    "main.0015d382.js.map": "/rentcars/static/js/main.0015d382.js.map",
+    "415.eca48f1c.chunk.js.map": "/rentcars/static/js/415.eca48f1c.chunk.js.map",
+    "378.9756849d.chunk.css.map": "/rentcars/static/css/378.9756849d.chunk.css.map",
+    "378.425a27a7.chunk.js.map": "/rentcars/static/js/378.425a27a7.chunk.js.map",
+    "395.fb6d965e.chunk.js.map": "/rentcars/static/js/395.fb6d965e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2d709f4f.css",
-    "static/js/main.843d028d.js"
+    "static/js/main.0015d382.js"
   ]
 }
