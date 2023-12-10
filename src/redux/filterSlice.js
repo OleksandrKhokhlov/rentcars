@@ -5,11 +5,11 @@ const filterSlice = createSlice({
   initialState: '',
 
   reducers: {
-    filterUserByName(state, action) {
-      state.filter = action.payload;
+    filterCarByMake(state, action) {
+     return state = action.payload;
     },
   },
 });
 
 export const filterReducer = filterSlice.reducer;
-export const { filterUserByName } = filterSlice.actions;
+export const { filterCarByMake } = filterSlice.actions;

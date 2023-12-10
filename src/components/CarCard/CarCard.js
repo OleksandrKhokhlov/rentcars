@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { cutAddres } from 'Helper/cutAddress';
 import { PopUp } from 'components/PopUp/PopUp';
-import { getFavorites } from '../../redux/selectors';
+import { selectFavorites } from '../../redux/selectors';
 import { addFavorite, removeFavorite } from '../../redux/favoriteSlice';
 import heartSvg from '../../images/heart.svg';
 import activheartSvg from '../../images/active .svg';
@@ -13,7 +13,7 @@ export const CarCard = ({ car }) => {
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
 
-  const favorite = useSelector(getFavorites);
+  const favorite = useSelector(selectFavorites);
 
   const dispatch = useDispatch();
 

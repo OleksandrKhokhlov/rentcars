@@ -1,4 +1,4 @@
-const brand = [
+export const brand = [
   'Buick',
   'Volvo',
   'HUMMER',
@@ -21,7 +21,3 @@ const brand = [
   'Kia',
   'Land',
 ];
-
-const price = [30, 40, 50, 60, 70, 80];
-
-export {brand, price}

@@ -3,7 +3,7 @@ import { fetchCars } from 'api';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addCars } from '../../redux/carsSlice';
-import { getCars } from '../../redux/selectors';
+import { selectVisibleCars } from '../../redux/selectors';
 import { CarCard } from '../CarCard/CarCard';
 
 export const CatalogCars = () => {
@@ -24,9 +24,7 @@ export const CatalogCars = () => {
     getCars();
   }, [dispatch]);
 
-  const cars = useSelector(getCars);
+  const cars = useSelector(selectVisibleCars);
 
-  return cars.map(car => {
-    return <CarCard key={car.id} car={car} />;
-  });
+  return cars.map(car => <CarCard key={car.id} car={car} />);
 };
