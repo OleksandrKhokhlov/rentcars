@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/rentcars/static/css/main.1bc7c02c.css",
-    "main.js": "/rentcars/static/js/main.e190a6c3.js",
+    "main.js": "/rentcars/static/js/main.71ec974f.js",
     "static/js/415.017e7437.chunk.js": "/rentcars/static/js/415.017e7437.chunk.js",
-    "static/js/548.00c222b8.chunk.js": "/rentcars/static/js/548.00c222b8.chunk.js",
-    "static/js/358.12c984f2.chunk.js": "/rentcars/static/js/358.12c984f2.chunk.js",
+    "static/js/548.890a058f.chunk.js": "/rentcars/static/js/548.890a058f.chunk.js",
+    "static/js/358.44656aec.chunk.js": "/rentcars/static/js/358.44656aec.chunk.js",
     "static/js/335.ebd7fb6e.chunk.js": "/rentcars/static/js/335.ebd7fb6e.chunk.js",
     "static/js/294.273ae6a4.chunk.js": "/rentcars/static/js/294.273ae6a4.chunk.js",
     "static/media/artage-io-1769719_1702202607.png": "/rentcars/static/media/artage-io-1769719_1702202607.4cf6ceedec92ca8484d5.png",
@@ -13,15 +13,15 @@
     "static/media/heart.svg": "/rentcars/static/media/heart.8eedddeb891b567f886909f0659c5af4.svg",
     "static/media/active .svg": "/rentcars/static/media/active .2a87465cfe0590f96a84901834bf6874.svg",
     "main.1bc7c02c.css.map": "/rentcars/static/css/main.1bc7c02c.css.map",
-    "main.e190a6c3.js.map": "/rentcars/static/js/main.e190a6c3.js.map",
+    "main.71ec974f.js.map": "/rentcars/static/js/main.71ec974f.js.map",
     "415.017e7437.chunk.js.map": "/rentcars/static/js/415.017e7437.chunk.js.map",
-    "548.00c222b8.chunk.js.map": "/rentcars/static/js/548.00c222b8.chunk.js.map",
-    "358.12c984f2.chunk.js.map": "/rentcars/static/js/358.12c984f2.chunk.js.map",
+    "548.890a058f.chunk.js.map": "/rentcars/static/js/548.890a058f.chunk.js.map",
+    "358.44656aec.chunk.js.map": "/rentcars/static/js/358.44656aec.chunk.js.map",
     "335.ebd7fb6e.chunk.js.map": "/rentcars/static/js/335.ebd7fb6e.chunk.js.map",
     "294.273ae6a4.chunk.js.map": "/rentcars/static/js/294.273ae6a4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1bc7c02c.css",
-    "static/js/main.e190a6c3.js"
+    "static/js/main.71ec974f.js"
   ]
 }
