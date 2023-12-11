@@ -6,11 +6,13 @@ import { addCars } from '../../redux/carsSlice';
 import { selectVisibleCars } from '../../redux/selectors';
 import { CarCard } from '../CarCard/CarCard';
 import { CatalogSection } from './Catalog.styled';
+import { filterCarByMake } from '../../redux/filterSlice';
 
 export const CatalogCars = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    dispatch(filterCarByMake(''))
     const getCars = async () => {
       try {
         const res = await fetchCars();
