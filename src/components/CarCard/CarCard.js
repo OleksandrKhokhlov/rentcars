@@ -6,6 +6,17 @@ import { selectFavorites } from '../../redux/selectors';
 import { addFavorite, removeFavorite } from '../../redux/favoriteSlice';
 import heartSvg from '../../images/heart.svg';
 import activheartSvg from '../../images/active .svg';
+import {
+  Card,
+  Description,
+  FavoriteBtn,
+  ImgCard,
+  LearnMoreBtn,
+  SpanPrice,
+  Title,
+  WrapImg,
+  WrapTitle,
+} from './CarCard.styled';
 
 export const CarCard = ({ car }) => {
   const [open, setOpen] = useState(false);
@@ -41,28 +52,32 @@ export const CarCard = ({ car }) => {
   };
 
   return (
-    <div>
-      <img src={photoLink} alt={make} width={274} />
-      <button type="button" onClick={() => handlerClick(carId)}>
-        <img
-          src={isFavorite ? activheartSvg : heartSvg}
-          alt="Add for favorite"
-        />
-      </button>
-      <div>
-        <h2>
+    <Card>
+      <WrapImg>
+        <ImgCard src={photoLink} alt={make} />
+        <FavoriteBtn type="button" onClick={() => handlerClick(carId)}>
+          <img
+            src={isFavorite ? activheartSvg : heartSvg}
+            alt="Add for favorite"
+          />
+        </FavoriteBtn>
+      </WrapImg>
+      <WrapTitle>
+        <Title>
           {make} <span>{model ? model : ''}</span>, {year}
-        </h2>
-        <span>{rentalPrice}</span>
-      </div>
+        </Title>
+        <SpanPrice>{rentalPrice}</SpanPrice>
+      </WrapTitle>
       <div>
-        <p>{newAddress + ` | ` + rentalCompany}</p>
-        <p>{type + ` | ` + model + ` | ` + mileage + ` | ` + accessories[2]}</p>
+        <Description>{newAddress + ` | ` + rentalCompany}</Description>
+        <Description>
+          {type + ` | ` + model + ` | ` + mileage + ` | ` + accessories[2]}
+        </Description>
       </div>
-      <button type="button" onClick={onOpenModal}>
+      <LearnMoreBtn type="button" onClick={onOpenModal}>
         Learn more
-      </button>
+      </LearnMoreBtn>
       <PopUp open={open} onClose={onCloseModal} car={car} />
-    </div>
+    </Card>
   );
 };

@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { CatalogCars } from 'components/Catalog/Catalog';
 import { Filter } from 'components/Filter/Filter';
 import { loadMoreCars } from '../redux/carsSlice';
+import { LoadMoreBtn } from './Catalog.styled';
 
 export default function CatalogPage() {
   const dispatch = useDispatch();
@@ -26,9 +27,9 @@ export default function CatalogPage() {
     <>
       <Filter />
       <CatalogCars />
-      <button type="button" onClick={handlerOnClick}>
+      <LoadMoreBtn type="button" onClick={handlerOnClick}>
         Load more
-      </button>
+      </LoadMoreBtn>
     </>
   );
 }

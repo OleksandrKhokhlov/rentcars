@@ -1,19 +1,19 @@
 import { Suspense } from 'react';
-import { AppBar } from '../AppBar/AppBar';
 import { Outlet } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
-import { Loader } from '../Loader';
+import { AppBar } from '../AppBar/AppBar';
+import { Container } from './Layout.styled';
+import { Loader } from 'components/Loader';
 
 export const Layout = () => {
   return (
     <>
       <AppBar />
-      <Suspense fallback={null}>
-        <main>
+      <Suspense fallback={<Loader />}>
+        <Container>
           <Outlet />
-        </main>
+        </Container>
       </Suspense>
-      <Loader />
       <Toaster reverseOrder={false} />
     </>
   );

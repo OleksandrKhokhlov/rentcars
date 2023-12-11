@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addCars } from '../../redux/carsSlice';
 import { selectVisibleCars } from '../../redux/selectors';
 import { CarCard } from '../CarCard/CarCard';
+import { CatalogSection } from './Catalog.styled';
 
 export const CatalogCars = () => {
   const dispatch = useDispatch();
@@ -26,5 +27,11 @@ export const CatalogCars = () => {
 
   const cars = useSelector(selectVisibleCars);
 
-  return cars.map(car => <CarCard key={car.id} car={car} />);
+  return (
+    <CatalogSection>
+      {cars.map(car => (
+        <CarCard key={car.id} car={car} />
+      ))}
+    </CatalogSection>
+  );
 };

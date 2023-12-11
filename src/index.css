@@ -1,15 +1,73 @@
 @import 'modern-normalize';
 
+:root {
+  --primary-brand: #30a356;
+  --hover-color: #2cb85a;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  color: #8a8a89;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(207, 236, 208, 0.5),
+    rgba(160, 206, 167, 0.6),
+    rgba(158, 192, 219, 0.7)
+  );
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  font-weight: inherit;
+  margin: auto;
+  padding: 5px;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.react-responsive-modal-modal {
+  width: 541px;
+  border-radius: 24px;
+  padding: 2.5rem;
+  margin: 0;
+  background: linear-gradient(
+    90deg,
+    rgb(207, 236, 208),
+    rgb(160, 206, 167),
+    rgb(158, 192, 219)
+  );
 }

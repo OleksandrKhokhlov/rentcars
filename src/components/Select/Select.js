@@ -1,9 +1,9 @@
 import { useDispatch } from 'react-redux';
 import { filterCarByMake } from '../../redux/filterSlice';
+import { Label, SelectMake } from './Select.styled';
 
 export const Select = ({ label, placeholder, options }) => {
   const dispatch = useDispatch();
-  
 
   const handlerChange = event => {
     dispatch(filterCarByMake(event.target.value));
@@ -11,9 +11,9 @@ export const Select = ({ label, placeholder, options }) => {
 
   return (
     <>
-      <label>
+      <Label>
         {label}
-        <select name="filter" id="select" onChange={handlerChange}>
+        <SelectMake name="filter" id="select" onChange={handlerChange}>
           <option value="">{placeholder}</option>
           {options?.map(option => {
             return (
@@ -22,8 +22,8 @@ export const Select = ({ label, placeholder, options }) => {
               </option>
             );
           })}
-        </select>
-      </label>
+        </SelectMake>
+      </Label>
     </>
   );
 };

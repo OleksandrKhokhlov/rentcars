@@ -1,6 +1,16 @@
 import { Modal } from 'react-responsive-modal';
-import 'react-responsive-modal/styles.css';
 import { cutAddres } from 'Helper/cutAddress';
+
+import { Description, ImgCard } from 'components/CarCard/CarCard.styled';
+import { Title } from 'pages/Home.styled';
+import {
+  Accent,
+  DescModal,
+  RentalCarBtn,
+  RentalConditionDesc,
+  RentalConditionsSection,
+} from './PopUp.styled';
+import { formatMileage } from 'Helper/formatMileage';
 
 export const PopUp = ({ open, onClose, car }) => {
   const {
@@ -21,30 +31,43 @@ export const PopUp = ({ open, onClose, car }) => {
     rentalPrice,
   } = car;
   const newAddress = cutAddres(address);
-  const accessoriesString = accessories.join('| ');
-  const functionalitiesString = functionalities.join('| ');
+  const newRentalConditions = rentalConditions.split('\n');
+  const age = newRentalConditions[0].split(':');
+  const accessoriesString = accessories.join(' | ');
+  const functionalitiesString = functionalities.join(' | ');
+  const formattedResult = formatMileage(mileage);
 
   return (
     <Modal open={open} onClose={onClose} center>
-      <img src={photoLink} alt={make} width={461} />
-      <h2>
+      <ImgCard src={photoLink} alt={make} width={461} />
+      <Title>
         {make} {model}, {year}
-      </h2>
-      <p>
+      </Title>
+      <Description>
         {newAddress} | id:{id} | Year:{year} | Type:{type}
-      </p>
-      <p>
+      </Description>
+      <Description>
         Fuel Consumption:{fuelConsumption} | Engine size:{engineSize}
-      </p>
-      <p>{description}</p>
-      <h3>Accessories and functionalities:</h3>
-      <p>{accessoriesString}</p>
-      <p>{functionalitiesString}</p>
-      <h3>Rental Conditions: </h3>
-      <p>{rentalConditions}</p>
-      <p>Mileage: {mileage / 1000}</p>
-      <p>Price: {rentalPrice}</p>
-      <a href="tel:+380730000000">Rental car</a>
+      </Description>
+      <DescModal>{description}</DescModal>
+      <DescModal>Accessories and functionalities:</DescModal>
+      <Description>{accessoriesString}</Description>
+      <Description>{functionalitiesString}</Description>
+      <DescModal>Rental Conditions: </DescModal>
+      <RentalConditionsSection>
+        <RentalConditionDesc>
+          {age[0]}: <Accent>{age[1]}</Accent>
+        </RentalConditionDesc>
+        <RentalConditionDesc>{newRentalConditions[1]}</RentalConditionDesc>
+        <RentalConditionDesc>{newRentalConditions[2]}</RentalConditionDesc>
+        <RentalConditionDesc>
+          Mileage: <Accent>{formattedResult}</Accent>
+        </RentalConditionDesc>
+        <RentalConditionDesc>
+          Price: <Accent>{rentalPrice}</Accent>
+        </RentalConditionDesc>
+      </RentalConditionsSection>
+      <RentalCarBtn href="tel:+380730000000">Rental car</RentalCarBtn>
     </Modal>
   );
 };
