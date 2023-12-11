@@ -17,6 +17,7 @@ import {
   WrapImg,
   WrapTitle,
 } from './CarCard.styled';
+import { cld } from 'cloudinary';
 
 export const CarCard = ({ car }) => {
   const [open, setOpen] = useState(false);
@@ -54,7 +55,7 @@ export const CarCard = ({ car }) => {
   return (
     <Card>
       <WrapImg>
-        <ImgCard src={photoLink} alt={make} />
+        <ImgCard src={cld.image(photoLink)} alt={make} />
         <FavoriteBtn type="button" onClick={() => handlerClick(carId)}>
           <img
             src={isFavorite ? activheartSvg : heartSvg}

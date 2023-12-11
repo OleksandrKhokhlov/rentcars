@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://OleksandrKhokhlov.github.io/rentcars/",
   "dependencies": {
+    "@cloudinary/react": "^1.11.2",
+    "@cloudinary/url-gen": "^1.14.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@reduxjs/toolkit": "^2.0.1",
