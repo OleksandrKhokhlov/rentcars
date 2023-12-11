@@ -26,6 +26,7 @@ export const FavoriteBtn = styled.button`
   right: 5px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 `;
 
 export const LearnMoreBtn = styled.button`
