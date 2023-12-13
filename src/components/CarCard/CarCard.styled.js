@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Card = styled.div`
+export const Card = styled.li`
   width: calc(100% / 4 - 20px);
   display: flex;
   flex-wrap: wrap;
