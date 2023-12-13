@@ -19,7 +19,6 @@ export default function CatalogPage() {
       if (res.data.length < 12) {
         setisVisible(false);
       }
-      console.log(res.data.length);
       if (res.status !== 200) {
         throw new Error();
       }
